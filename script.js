@@ -1,4 +1,3 @@
-// Run all logic after DOM has fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   const addButton = document.getElementById('add-task-btn');
   const taskInput = document.getElementById('task-input');
@@ -37,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create remove button
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Remove';
-    removeBtn.className = 'remove-btn';
+    removeBtn.classList.add('remove-btn'); // Use classList.add
 
     // Remove task on button click
     removeBtn.onclick = () => {
